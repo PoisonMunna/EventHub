@@ -1,0 +1,153 @@
+import {
+  EventItem,
+  EventCategory,
+  EventStatus,
+  TicketTier,
+} from "../types";
+
+export const initialEvents: EventItem[] = [
+  {
+    id: "e1",
+    title: "Summer Music Festival",
+    description:
+      "3 days of amazing live music featuring top artists from around the world. Food trucks, camping, and unforgettable memories!",
+    date: "2025-07-15",
+    time: "14:00",
+    venue: "Central Park Arena",
+    image: "🎵",
+    category: EventCategory.MUSIC,
+    status: EventStatus.UPCOMING,
+    organizer: "MusicWorld Inc.",
+    tickets: [
+      { tier: TicketTier.GENERAL, price: 49.99, totalSeats: 500, bookedSeats: 0 },
+      { tier: TicketTier.VIP, price: 149.99, totalSeats: 100, bookedSeats: 0 },
+      { tier: TicketTier.PREMIUM, price: 299.99, totalSeats: 30, bookedSeats: 0 },
+    ],
+  },
+  {
+    id: "e2",
+    title: "Tech Conference 2025",
+    description:
+      "Learn from industry leaders about AI, Web3, Cloud, and the future of technology. Networking opportunities included.",
+    date: "2025-08-20",
+    time: "09:00",
+    venue: "Tech Convention Center",
+    image: "💻",
+    category: EventCategory.TECH,
+    status: EventStatus.UPCOMING,
+    organizer: "TechTalks Global",
+    tickets: [
+      { tier: TicketTier.GENERAL, price: 99.99, totalSeats: 300, bookedSeats: 0 },
+      { tier: TicketTier.VIP, price: 249.99, totalSeats: 50, bookedSeats: 0 },
+      { tier: TicketTier.PREMIUM, price: 499.99, totalSeats: 15, bookedSeats: 0 },
+    ],
+  },
+  {
+    id: "e3",
+    title: "City Marathon 2025",
+    description:
+      "Annual city marathon - 5K, 10K, and full marathon options. All fitness levels welcome. Medals for all finishers!",
+    date: "2025-09-10",
+    time: "06:00",
+    venue: "Downtown City Center",
+    image: "🏃",
+    category: EventCategory.SPORTS,
+    status: EventStatus.UPCOMING,
+    organizer: "City Sports Club",
+    tickets: [
+      { tier: TicketTier.GENERAL, price: 25.0, totalSeats: 1000, bookedSeats: 0 },
+      { tier: TicketTier.VIP, price: 75.0, totalSeats: 200, bookedSeats: 0 },
+      { tier: TicketTier.PREMIUM, price: 150.0, totalSeats: 50, bookedSeats: 0 },
+    ],
+  },
+  {
+    id: "e4",
+    title: "Art Gallery Opening",
+    description:
+      "Exclusive preview of contemporary art from emerging artists. Wine and cheese reception included.",
+    date: "2025-06-25",
+    time: "18:00",
+    venue: "Modern Art Museum",
+    image: "🎨",
+    category: EventCategory.ART,
+    status: EventStatus.UPCOMING,
+    organizer: "ArtVision Gallery",
+    tickets: [
+      { tier: TicketTier.GENERAL, price: 35.0, totalSeats: 150, bookedSeats: 0 },
+      { tier: TicketTier.VIP, price: 85.0, totalSeats: 40, bookedSeats: 0 },
+      { tier: TicketTier.PREMIUM, price: 175.0, totalSeats: 10, bookedSeats: 0 },
+    ],
+  },
+  {
+    id: "e5",
+    title: "Food & Wine Festival",
+    description:
+      "Taste cuisines from 30+ restaurants. Live cooking demos, wine tasting, and celebrity chef meet & greet.",
+    date: "2025-10-05",
+    time: "11:00",
+    venue: "Riverside Gardens",
+    image: "🍷",
+    category: EventCategory.FOOD,
+    status: EventStatus.UPCOMING,
+    organizer: "Gourmet Events Co.",
+    tickets: [
+      { tier: TicketTier.GENERAL, price: 45.0, totalSeats: 400, bookedSeats: 0 },
+      { tier: TicketTier.VIP, price: 120.0, totalSeats: 80, bookedSeats: 0 },
+      { tier: TicketTier.PREMIUM, price: 250.0, totalSeats: 20, bookedSeats: 0 },
+    ],
+  },
+  {
+    id: "e6",
+    title: "Startup Pitch Night",
+    description:
+      "Watch 10 startups pitch to investors. Network with entrepreneurs and VCs. Light refreshments provided.",
+    date: "2025-07-30",
+    time: "19:00",
+    venue: "Innovation Hub",
+    image: "🚀",
+    category: EventCategory.BUSINESS,
+    status: EventStatus.UPCOMING,
+    organizer: "StartupCity",
+    tickets: [
+      { tier: TicketTier.GENERAL, price: 15.0, totalSeats: 200, bookedSeats: 0 },
+      { tier: TicketTier.VIP, price: 55.0, totalSeats: 50, bookedSeats: 0 },
+      { tier: TicketTier.PREMIUM, price: 100.0, totalSeats: 10, bookedSeats: 0 },
+    ],
+  },
+  {
+    id: "e7",
+    title: "Jazz Night Live",
+    description:
+      "An evening of smooth jazz with Grammy-nominated artists. Dinner and drinks available.",
+    date: "2025-08-05",
+    time: "20:00",
+    venue: "Blue Note Jazz Club",
+    image: "🎷",
+    category: EventCategory.MUSIC,
+    status: EventStatus.UPCOMING,
+    organizer: "Jazz Society",
+    tickets: [
+      { tier: TicketTier.GENERAL, price: 39.99, totalSeats: 120, bookedSeats: 118 },
+      { tier: TicketTier.VIP, price: 89.99, totalSeats: 30, bookedSeats: 29 },
+      { tier: TicketTier.PREMIUM, price: 179.99, totalSeats: 8, bookedSeats: 8 },
+    ],
+  },
+  {
+    id: "e8",
+    title: "AI Workshop",
+    description:
+      "Hands-on workshop on building AI applications with Python and TensorFlow. Laptop required.",
+    date: "2025-09-15",
+    time: "10:00",
+    venue: "Tech Campus Lab",
+    image: "🤖",
+    category: EventCategory.TECH,
+    status: EventStatus.UPCOMING,
+    organizer: "AI Academy",
+    tickets: [
+      { tier: TicketTier.GENERAL, price: 79.99, totalSeats: 60, bookedSeats: 0 },
+      { tier: TicketTier.VIP, price: 149.99, totalSeats: 15, bookedSeats: 0 },
+      { tier: TicketTier.PREMIUM, price: 299.99, totalSeats: 5, bookedSeats: 0 },
+    ],
+  },
+];
