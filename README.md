@@ -1,4 +1,4 @@
-🎟️ EventHub — Event Booking System
+# 🎟️ EventHub — Event Booking System
 
 A fully functional event booking platform built with **TypeScript + React + Vite**.  
 This project demonstrates how TypeScript prevents overbooking, invalid data, and runtime errors through strict typing.
