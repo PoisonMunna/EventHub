@@ -3,8 +3,8 @@
 /* ═══════════════════════════════════════════ */
 
 :root {
-  --primary: #e17055;
-  --primary-dark: #d35400;
+  --primary: #0d10cc;
+  --primary-dark: #0007d3;
   --secondary: #00b894;
   --danger: #d63031;
   --warning: #fdcb6e;
@@ -38,7 +38,7 @@ body {
 
 /* ── Header ───────────────────────────────── */
 .header {
-  background: linear-gradient(135deg, var(--primary), #fab1a0);
+  background: linear-gradient(135deg, var(--primary), #8e79f9);
   color: white;
   padding: 1rem 2rem;
   position: sticky;
@@ -202,7 +202,7 @@ body {
   font-size: 4rem;
   text-align: center;
   padding: 1.5rem;
-  background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+  background: linear-gradient(135deg, #a7f9ff, #2863d7);
 }
 
 .event-content {
